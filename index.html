@@ -1,0 +1,114 @@
+<html>
+
+<head>
+   <style>
+     body{
+        margin: 5% 10%;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+     }
+      
+     table {
+        width: auto;
+        font-size: 20px;
+        border: 1px solid gray;
+        border-collapse: collapse;
+        margin-bottom: 3.5%;
+                }
+
+
+        table, th, td {
+            border: 1.5px solid #e3e5e5;
+            padding: 10px 55px 10px 13px;
+            text-align: left;
+          }
+
+
+          button {
+            background-color: #000000;
+            color: white;
+            padding: 0.5% 1%;
+        }
+
+        button a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+
+        h1 {
+            font-family: "Times New Roman" , Times, serif;
+            text-align: center;
+            font-size: 3em;
+        }
+
+        li{
+            margin-bottom: 1%;
+        }
+    </style>
+</head>
+
+
+<body>
+<h1>Crozzle</h1>
+    
+    <p>
+        <button><a href="..\index.html">Rules</a></button>
+        <button><a href="..\words\index.html">Words</a></button>
+        <button><a href="..\grids\index.html">Winning Text</a></button>
+        <button><a href="..\games\index.html">Winning Games</a></button>
+    </p>
+    <p>Crozzle is a mixture of jigsaw puzzle and crossword. Given a 100 or so words you place them into a grid that is blank.  
+        The grid size was 15x10 grid until 1994 when it became a 15x13 grid.</p>
+    <h2>Scoring</h2>
+
+    <p>10 points per word and points for each interlock (intersection of words):</p>
+    <table>
+    <tr><th>Letters</th><th>Score</th></tr>
+    <tr><td>ABCDEF</td><td>2 points</td></tr>
+    <tr><td>GHIJKL</td><td>4 points</td></tr>
+    <tr><td>MNOPQR</td><td>8 points</td></tr>
+    <tr><td>STUVWX</td><td>16 points</td></tr>
+    <tr><td>Y</td><td>32 points</td></tr>
+    <tr><td>Z</td><td>64 points</td></tr>
+    </table>
+
+
+<h2>Rules</h2>
+<ol>
+<li>All placed words must fit completely within the grid.</li>
+<li>The intersection of two words must be at a shared letter.  We call these intersection an interlock</li>
+<li>No two words may be adjacent unless the adjacent parts are covered by rule 2 or placed end to end.</li>
+<li>All placed words must interlock with at least one other word in the grid.</li>
+<li>Not all of the words need to be placed.</li>
+</ol>
+
+
+ 
+<h2>NP Hard</h2>
+<p>This activity is NP-Hard, it is impossible for a computer to calculate every combination as the search space is too large.  To write code that wins current human scores you must come up with heuristics, efficent data structures, good algorithms.</p>
+
+<h2>Research</h2>
+<ol>
+    <li><a href="https://50years.acs.org.au/content/dam/acs/50-years/journals/acj/ACJ-V25-N02-199305.pdf">Automation of the Crozzle by GH Harris, JJH Forster, 1993</a></li>
+    <li><a href="http://ebb.org/bkuhn/articles/crozzle.pdf">Crozzle: an NP-Complete Problem by David W Binkley</a></li>
+    <li><a href="https://research-repository.griffith.edu.au/bitstream/handle/10072/365420/White_2009_02Thesis.pdf?sequence=1&amp;isAllowed=y">Experimental Development of Automated Search Techniques for Discrete Combinatorial Optimisation by Bradley White, 2009</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
